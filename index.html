@@ -268,10 +268,11 @@
   form .btn { justify-self: center; margin-top: 6px; }
   .form-note { text-align: center; font-size: 14px; color: #b0605c; min-height: 1.4em; }
   .thanks { display: none; }
+  .thanks { margin-top: 18px; }
   .thanks h3 { font-family: var(--script); font-weight: 400; font-size: 52px; line-height: 1.1; color: var(--rose-deep); margin-bottom: 10px; }
   .thanks .demo { margin-top: 16px; font-size: 13px; color: #b0605c; }
   .thanks button { margin-top: 22px; cursor: pointer; }
-  .sent form { display: none; }
+  .sent form, .sent .rsvp-intro { display: none; }
   .sent .thanks { display: block; animation: rise .8s ease both; }
 
   /* ---------- Финал ---------- */
@@ -439,8 +440,10 @@
   <section id="rsvp">
     <div class="wrap card reveal" id="rsvpCard">
       <span class="eyebrow">Анкета гостя</span>
-      <h2>Вы будете с&nbsp;нами?</h2>
-      <p class="lead" style="margin-bottom:26px">Пожалуйста, подтвердите своё присутствие&nbsp;— так нам будет проще всё подготовить.</p>
+      <div class="rsvp-intro">
+        <h2>Вы будете с&nbsp;нами?</h2>
+        <p class="lead" style="margin-bottom:26px">Пожалуйста, подтвердите своё присутствие&nbsp;— так нам будет проще всё подготовить.</p>
+      </div>
 
       <form id="rsvpForm" novalidate>
         <label class="field"><span>Имя и фамилия</span>
@@ -479,7 +482,7 @@
         <h3 id="thanksTitle">Спасибо!</h3>
         <p class="lead" id="thanksText"></p>
         <p class="demo" id="demoNote" hidden>Демо-режим: Google Таблица ещё не подключена, ответ никуда не отправлен.</p>
-        <button class="btn-ghost" type="button" id="againBtn">Изменить ответ</button>
+        <button class="btn-ghost" type="button" id="againBtn">← Назад</button>
       </div>
     </div>
   </section>
