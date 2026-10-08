@@ -308,6 +308,17 @@
     to { transform: translate3d(var(--dx), 112vh, 0) rotate(540deg); }
   }
 
+  /* ---------- Фото ---------- */
+  .photo { margin: 0; overflow: hidden; border: 6px solid rgba(255, 255, 255, .85); border-radius: 24px; box-shadow: 0 30px 70px -40px rgba(140, 100, 95, .7); background: var(--blush); }
+  .photo img { display: block; width: 100%; height: 100%; object-fit: cover; }
+  .photo.arched { border-radius: 999px 999px 24px 24px; }
+  .photo-main { width: min(340px, 84%); aspect-ratio: 3 / 4; margin: 0 auto 44px; }
+  .photo-main img { object-position: 50% 25%; }
+  .duo { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; width: min(560px, 100%); margin: 0 auto; }
+  .duo .photo { aspect-ratio: 2 / 3; }
+  .duo .photo:first-child { margin-top: 48px; }
+  .duo .photo:last-child { margin-bottom: 48px; }
+
   @media (min-width: 720px) {
     section { padding: 110px 24px; }
     .card { padding: 52px 48px; }
@@ -356,6 +367,7 @@
   <!-- Приглашение + календарь -->
   <section>
     <div class="wrap reveal">
+      <figure class="photo arched photo-main"><img src="img/couple.jpg" alt="Жених и невеста" width="675" height="1036"></figure>
       <span class="eyebrow">Дорогие родные и друзья</span>
       <h2>Приглашаем вас на&nbsp;нашу свадьбу</h2>
       <p class="lead">В нашей жизни наступает день, который мы&nbsp;запомним навсегда. Мы&nbsp;будем счастливы, если вы&nbsp;разделите с&nbsp;нами его радость, тепло и&nbsp;самые важные слова.</p>
@@ -394,6 +406,14 @@
         <li><time datetime="20:00">20:00</time><div><h3>Танцы и&nbsp;свадебный торт</h3><p>Первый танец и&nbsp;музыка до&nbsp;позднего вечера</p></div></li>
         <li class="key"><time datetime="23:00">23:00</time><div><h3>Завершение вечера</h3><p>Провожаем гостей с&nbsp;благодарностью</p></div></li>
       </ol>
+    </div>
+  </section>
+
+  <!-- Фото -->
+  <section style="padding-top:0">
+    <div class="duo reveal">
+      <figure class="photo"><img src="img/hands.jpg" alt="Руки жениха и невесты с кольцами" loading="lazy" width="736" height="1103"></figure>
+      <figure class="photo arched"><img src="img/bouquet.jpg" alt="Свадебный букет и обручальные кольца" loading="lazy" width="735" height="1103"></figure>
     </div>
   </section>
 
