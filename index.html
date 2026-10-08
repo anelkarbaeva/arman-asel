@@ -315,6 +315,8 @@
   .photo.arched { border-radius: 999px 999px 24px 24px; }
   .photo-main { width: min(340px, 84%); aspect-ratio: 3 / 4; margin: 0 auto 44px; }
   .photo-main img { object-position: 50% 25%; }
+  .photo-wide { width: min(420px, 100%); aspect-ratio: 4 / 5; margin: 0 auto; }
+  .photo-wide img { object-position: 50% 18%; }
   .duo { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; width: min(560px, 100%); margin: 0 auto; }
   .duo .photo { aspect-ratio: 2 / 3; }
   .duo .photo:first-child { margin-top: 48px; }
@@ -392,6 +394,11 @@
         <div><b id="tS">00</b><span id="lS">секунд</span></div>
       </div>
     </div>
+  </section>
+
+  <!-- Фото пары -->
+  <section style="padding-top:0;padding-bottom:0">
+    <figure class="photo photo-wide reveal"><img src="img/couple2.jpg" alt="Жених и невеста" loading="lazy" width="736" height="1307"></figure>
   </section>
 
   <!-- Программа -->
